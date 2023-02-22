@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #566885;
+}
+body {
+    background-color: #E9E6E6;
+}
+#root {
+    width: 100%;
+}
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrap {
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 200px;
+    width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    align-self: center;
+}
+
+input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid lightslategray;
+    margin-bottom: 10px;
+    padding: 7px 5px;
+}
+
+button {
+    background: transparent;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: lightslategray;
+    transition: all .3s ease-in-out;
+    margin-left: auto;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: lightslategray;
+    color: white;
+}
+
+.disk {
+    margin-top: 20px;
+}
+
+.disk__btns {
+    display: inline-flex;
+    align-items: center;
+}
+
+.disk__create {
+    margin-left: 20px;
+}
+
+.disk__upload {
+    margin-top: 8px;
+}
+
+.disk__upload-input {
+    display: none;
+}
+
+.disk__upload-label {
+    cursor: pointer;
+    border: 2px dashed lightslategray;
+    padding: 5px 10px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.drop-area {
+    width: 100%;
+    height: calc(100vh - 50px - 40px);
+    margin: 20px;
+    border: 2px dashed #566885;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+select {
+    margin: 10px 200px 0 20px;
+    border: 1px solid lightgray;
+    background: whitesmoke;
+    outline: none;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.disk__plate, .disk__list {
+    height: 25px;
+    width: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: no-repeat center center;
+    background-size: contain;
+}
+
+.disk__list {
+    background-image: url(./assets/img/list-view.svg);
+}
+
+.disk__plate {
+    background-image: url(./assets/img/plate-view.svg);
+}

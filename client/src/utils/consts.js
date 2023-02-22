@@ -1,0 +1,5 @@
+export const LOGIN_ROUTE = '/login'
+export const REGISTRATION_ROUTE = '/registration'
+export const CHECK_ROUTE = '/check'
+export const DISK_ROUTE = '/'
+export const PROFILE_ROUTE = '/profile'
